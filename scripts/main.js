@@ -53,7 +53,7 @@ tl.to(".top", { x: 0, duration: 2 }, "<");
 
 if (window.screen.width >= 600) {
   tl.fromTo(".tremolo", { x: 0 }, { x: 300 }, ">");
-  tl.fromTo(".diatonic", { x: 0 }, { x: 0 }, ">");
+  tl.fromTo(".diatonic", { x: 0 }, { x: 30 }, ">");
   tl.fromTo(".chromatic", { x: 0 }, { x: -300 }, ">");
 } else {
   tl.fromTo(".tremolo", { x: 0 }, { x: 75 }, ">");
@@ -61,5 +61,5 @@ if (window.screen.width >= 600) {
   tl.fromTo(".chromatic", { x: 0 }, { x: -75 }, ">");
 }
 
-tl.fromTo(".parts", { opacity: 1, duration: 0 }, { opacity: 0, duration: 0 }, ">");
-tl.fromTo(".kind", { opacity: 0, duration: 0 }, { opacity: 1, duration: 0 }, "<");
+tl.fromTo(".parts", { opacity: 1, duration: 0 }, { opacity: 0, y:200, duration: 5 }, ">");
+tl.fromTo(".kind", { opacity: 0, duration: 5, y: -200 }, { opacity: 1, duration: 5, y: 0 }, "<");

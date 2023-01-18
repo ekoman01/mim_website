@@ -8,6 +8,12 @@ body {
   width: 100%;
 }
 
+.normal_font {
+  font-family: doublebass, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .scene {
   height: 100%;
   width: 100%;
@@ -29,6 +35,7 @@ body {
 }
 
 .intro {
+  margin-top: 30%;
   font-size: 2em;
   text-align: center;
 }
@@ -45,7 +52,7 @@ body {
 
 .others {
   position: relative;
-  bottom: 25%;
+  bottom: 0%;
 }
 
 .kind {
@@ -57,13 +64,23 @@ body {
   height: 100%;
 }
 
+.year {
+  font-size: 12em;
+  text-align: center;
+}
+
 @media screen and (min-width: 600px) {
   .viewer {
     background-image: url(/assets/animation/css_sprites_large.png);
     max-width: 500px;
     width: 100%;
   }
+  .year {
+    margin-top: 10%;
+    font-size: 50em;
+  }
 }
+
 
 
 /* html,
