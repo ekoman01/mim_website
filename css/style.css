@@ -1,5 +1,12 @@
-body {
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
   background-color: #D6CBB3;
+}
+
+body {
   overflow-x: hidden;
 }
 
@@ -9,23 +16,100 @@ body {
   font-style: normal;
 }
 
-.section-with-apple {
+a {
+  text-decoration: none;
+  color: #000;
+}
+ul {
+  list-style-type: none;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #D6CBB3;
+  z-index: 100;
+  padding-left: 0.2em;
+}
+.nav__logo > img {
+  width: 30vw;
+}
+.nav__menu {
+  list-style-type: none;
+  float: right;
+  display: none;
+}
+.nav__hamburger > a > img{
+  width: 15vw;
+  margin-right: 0.5em;
+}
+
+
+.part_one {
+  height: 100vh;
+  width: 100vw;
   position: relative;
 }
 
 .header {
   height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.header__title {
+  align-self: center;
+  font-size: 11vw;
+}
+.header__undertitle {
+  margin-right: 2em;
+  align-self: end;
+  text-align: center;
+}
+.header__button {
+  align-self: center;
+  text-align: center;
+  font-size: 6vw;
 }
 
 .intro {
+  margin-top: 15vh;
+  text-align: center;
+  font-size: 8vw;
   height: 100vh;
+}
+
+.parts {
+  margin-top: -20em;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.piece {
+  position: absolute;
+  width: 30%;
 }
 
 .kinds {
   height: 100vh;
 }
+.kinds > img {
+  width: 30%;
+}
 
-.apple {
+/* harmonica animation */
+.harmonica {
   position: absolute;
   top: 0;
   left: 0;
@@ -36,17 +120,45 @@ body {
   justify-content: center;
   overflow: hidden;
   pointer-events: none;
+  animation: float 6s ease-in-out infinite;
 }
 
-.apple__wrapper {
-  width: 50vw;
-  height: 50vw;
+.harmonica__wrapper {
+  width: 100vw;
+  height: 100vw;
   overflow: hidden;
   max-width: 500px;
   max-height: 500px;
 }
 
-.apple__image {
+.harmonica__image {
   width: calc(100% * 8);
   height: auto;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0);
+		transform: translatey(0px);
+	}
+}
+
+
+/* toots */
+.toots {
+  height: 100vh;
+  display: flex;
+}
+
+.year {
+  font-size: 12em;
+  text-align: center;
 }
