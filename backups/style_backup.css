@@ -1,0 +1,138 @@
+html,
+body {
+  height: 100%;
+  background-color: #D6CBB3;
+}
+
+body {
+  width: 100%;
+}
+
+.normal_font {
+  font-family: doublebass, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.scene {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+
+.viewer {
+  height: 120%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 300px;
+  height: 100vh;
+  width: 100vh;
+  background-image: url(/assets/animation/css_sprites_small.png);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  align-self: flex-start;
+}
+
+.intro {
+  margin-top: 30%;
+  font-size: 2em;
+  text-align: center;
+}
+
+.parts {
+  left: 39%;
+  position: relative;
+}
+
+.piece {
+  position: absolute;
+  width: 30%;
+}
+
+.others {
+  position: relative;
+  bottom: 0%;
+}
+
+.kind {
+  position: relative;
+  width: 30%;
+}
+
+.part1 {
+  height: 100%;
+}
+
+.year {
+  font-size: 12em;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .viewer {
+    background-image: url(/assets/animation/css_sprites_large.png);
+    max-width: 500px;
+    width: 100%;
+  }
+  .year {
+    margin-top: 10%;
+    font-size: 50em;
+  }
+}
+
+
+
+/* html,
+body {
+  height: 100%;
+  background-color: #D6CBB3;
+}
+
+body {
+  width: 100%;
+}
+
+.scene {
+  height: 100%;
+  width: 100%;
+}
+
+
+.viewer {
+  height: 120%;
+  margin-top: -10%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  width: 100%;
+  background-image: url(/assets/animation/css_sprites.png);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  scale: 60%;
+}
+
+.intro {
+  font-size: 5em;
+  text-align: center;
+}
+
+.parts {
+  left: 39%;
+  bottom: 30%;
+  position: relative;
+}
+
+.piece {
+  position: absolute;
+}
+
+.others {
+  max-width: 2000px;
+  position: absolute;
+  bottom: -4%;
+}
+
+.part1 {
+  height: 100%;
+} */
