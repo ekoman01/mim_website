@@ -41,14 +41,37 @@ ul {
   margin-bottom: auto;
 }
 .header__title {
-  align-self: center;
-  font-size: 11vw;
+  position: relative;
+}
+.header__title > h1{
+  font-size: 16vw;
+  margin-left: 0.2em;
+  position: absolute;
+  color: #D6CBB3;
+}
+.header__title > img{
+  width: 92vw;
+  margin-top: 1.7em;
 }
 .header__undertitle {
+  margin-top: -1.7em;
+  display: inline-flex;
   margin-right: 2em;
   align-self: end;
   text-align: center;
+  position: relative;
 }
+.header__undertitle > p {
+  position: absolute;
+  font-size: 8vw;
+  color: #D6CBB3;
+  margin-left: 0.2em;
+}
+.header__undertitle > img {
+  width: 60vw;
+  margin-top: 1.4em;
+}
+
 .header__button {
   align-self: center;
   text-align: center;
@@ -58,7 +81,7 @@ ul {
 .intro {
   display: flex;
   align-self: end;
-  margin-top: 15vh;
+  margin-top: 20em;
   text-align: center;
   font-size: 8vw;
   height: 100vh;
@@ -68,13 +91,22 @@ ul {
   margin-top: -20em;
   height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
+  position: relative;
 }
-
-.piece {
+.parts__piece {
   position: absolute;
   width: 30%;
+}
+.parts__piece:hover {
+  width: 35%;
+}
+.parts > p {
+  position: absolute;
+  font-size: 10vw;
+  text-align: center;
+  bottom: 2em;
 }
 
 /* harmonica animation */
@@ -120,30 +152,6 @@ ul {
 	}
 }
 
-
-/* toots */
-.toots {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.toots__year {
-  font-size: 50vw;
-}
-.toots__name {
-  font-size: 30vw;
-}
-.toots__nickname {
-  font-size: 10vw;
-}
-.toots__image > img {
-  width: 100vw;
-  align-self: end;
-}
-
 /* kinds */
 .kinds {
   height: 100vh;
@@ -163,9 +171,15 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
-.kinds__kind > img {
+.kinds__kind > .kind {
+  position: absolute;
   width: 30%;
+  bottom: 1em;
+}
+.kinds__kind > .back {
+  width: 60vw;
 }
 .kinds__kind > p {
   font-size: 15vw;
@@ -215,4 +229,37 @@ ul {
 }
 .kinds > a:focus {
   background: #000;
+}
+
+/* toots */
+.toots {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.toots__year {
+  font-size: 50vw;
+}
+.toots__name {
+  font-size: 30vw;
+}
+.toots__nickname {
+  font-size: 10vw;
+}
+.toots__image > img {
+  width: 100vw;
+  align-self: end;
+}
+
+/* bob */
+
+.bob {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
