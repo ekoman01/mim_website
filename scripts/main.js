@@ -1,4 +1,6 @@
 import '/css/style.css'
+import "/css/nav.css";
+import "/css/responsive.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -35,10 +37,8 @@ const init = () => {
     const harmonicaPosition = harmonicaPositions[harmonica.step];
     $harmonicaImage.style.transform = `translate(${-100 * harmonicaPosition.x * harmonicaStepPercentageX}%`;
   }})
-
-  tl.fromTo(".intro", { opacity: 0 }, { opacity: 1 }, ">");
-  tl.fromTo(".harmonica", { y: 0 }, { y: 100, delay: 2 }), ">10";
-  tl.fromTo(".harmonica", { opacity: 1 }, { opacity: 0 }), ">";
+  tl.call(disableFloating)
+  tl.to(".harmonica", { opacity: 1 }), ">";
 
   const tlParts = gsap.timeline({
     scrollTrigger: {
@@ -55,5 +55,51 @@ const init = () => {
   tlParts.to(".top", { x: -150 }, "<");
 
 };
+
+let floating = true;
+
+const disableFloating = () => {
+  if (floating) {
+    floating = false;
+    const $harmonica = document.querySelector(".harmonica");
+    $harmonica.style.animation = "none";
+  }
+  else {
+    floating = true;
+    const $harmonica = document.querySelector(".harmonica");
+    $harmonica.style.animation = "float 6s ease-in-out infinite";
+  }
+}
+
+let startCount = 1900,
+  num = { var: startCount };
+
+const changeNumber = () => {
+  const $year = document.querySelector(".toots__year");
+  $year.innerHTML = num.var.toFixed();
+};
+
+const yearTl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".toots",
+    pin: true,
+    markers: true,
+    start: "top 10%",
+    end: "bottom 50%",
+    scrub: true,
+  },
+});
+  yearTl.to(num, {
+    var: 1955,
+    duration: 1,
+    ease: "none",
+    onUpdate: changeNumber,
+  });
+  yearTl.fromTo(".toots__name", { y: 500 }, { y: 0 }, "<1");
+  yearTl.fromTo(".toots__nickname", { y: 500 }, { y: 0 }, "<");
+  yearTl.fromTo(".toots__image", { y: 500 }, { y: 0 }, "<");
+
+  yearTl.fromTo(".toots__name", { y: 0 }, { y: -500 }, "<1");
+  yearTl.fromTo(".toots__nickname", { y: 0 }, { y: -500 }, "<");
 
 init();

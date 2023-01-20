@@ -2,26 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/assets/svg/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MIM - Harmonica</title>
   </head>
   <body class="normal_font">
-    <nav class="nav">
-      <div class="nav__logo">
-        <img src="/assets/logo.png" alt="logo">
-      </div>
-      <div class="nav__hamburger">
-        <a href=""><img src="/assets/menu.png" alt=""></a>
-      </div>
-      <div class="nav__menu">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+  <nav>
+    <div class="nav__logo">
+      <a href=""><img src="/assets/logo.png" alt=""></a>
+      <img src="/assets/svg/logo-background.svg" alt="">
+    </div>
+    <div class="menuToggle">
+        <input type="checkbox" />
+        
+        <span></span>
+        <span></span>
+        <span></span>
+        
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Info</a></li>
+        <li><a href="#">Contact</a></li>  
+      </ul>
+      <img src="/assets/svg/nav-background.svg" alt="">
+    </div>
+  </nav>
 
     <div class="part_one">
       <section class="header">
@@ -49,14 +55,43 @@
       </div>
 
       <div class="kinds">
-        <img src="/assets/animation/Chromatic_.png" alt="">
-        <img src="/assets/animation/Diatonic_.png" alt="">
-        <img src="/assets/animation/Asian_Tremolo_.png" alt="">
+        <div class="kinds__kind">
+          <p>chromatic</p>
+          <img class="chromatic" src="/assets/animation/Chromatic_.png" alt="">
+        </div>
+        <div class="kinds__kind">
+          <p>diatonic</p>
+          <img class="diatonic"  src="/assets/animation/Diatonic_.png" alt="">
+        </div>
+        <div class="kinds__kind">
+          <p>tremolo</p>
+          <img class="tremolo"  src="/assets/animation/Asian_Tremolo_.png" alt="">
+        </div>
       </div>
       
       <div class="harmonica">
         <div class="harmonica__wrapper">
           <img src="assets/animation/css_sprites.png" alt="apple" class="harmonica__image" width="8160" height="1020" />
+        </div>
+      </div>
+
+      <div class="toots">
+        <div class="toots__year">1900</div>
+        <div class="toots__name">toots</div>
+        <div class="toots__nickname">a belgian legend</div>
+        
+        <div class="toots__quote">"Het is niet gemakkelijk om met mij samen te leven want ik denk dat ik soms te obsessed ben door mijn mondharmonica."</div>
+
+        <div class="toots__image">
+          <img src="/assets/Toots.png" alt="">
+        </div>
+
+        <div class="toots__harmonica">Chromatic</div>
+        <div class="toots__fact">Toots Thielemans was lid van de circa 25 leden tellende Snorrenclub Antwerpen. Hij werd in 1988 door hen tot "Snor van het Jaar" uitgeroepen.</div>
+        <div class="toots__work">
+          Sesame street
+          Midnightcowboy
+          Bluesette
         </div>
       </div>
     </div>

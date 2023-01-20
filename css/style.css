@@ -24,32 +24,6 @@ ul {
   list-style-type: none;
 }
 
-.nav {
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #D6CBB3;
-  z-index: 100;
-  padding-left: 0.2em;
-}
-.nav__logo > img {
-  width: 30vw;
-}
-.nav__menu {
-  list-style-type: none;
-  float: right;
-  display: none;
-}
-.nav__hamburger > a > img{
-  width: 15vw;
-  margin-right: 0.5em;
-}
-
-
 .part_one {
   height: 100vh;
   width: 100vw;
@@ -82,6 +56,8 @@ ul {
 }
 
 .intro {
+  display: flex;
+  align-self: end;
   margin-top: 15vh;
   text-align: center;
   font-size: 8vw;
@@ -98,13 +74,6 @@ ul {
 
 .piece {
   position: absolute;
-  width: 30%;
-}
-
-.kinds {
-  height: 100vh;
-}
-.kinds > img {
   width: 30%;
 }
 
@@ -155,10 +124,95 @@ ul {
 /* toots */
 .toots {
   height: 100vh;
+  width: 100vw;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.toots__year {
+  font-size: 50vw;
+}
+.toots__name {
+  font-size: 30vw;
+}
+.toots__nickname {
+  font-size: 10vw;
+}
+.toots__image > img {
+  width: 100vw;
+  align-self: end;
 }
 
-.year {
-  font-size: 12em;
-  text-align: center;
+/* kinds */
+.kinds {
+  height: 100vh;
+  display: flex;
+  
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  
+  margin-bottom: 20em;
+}
+.kinds__kind {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.kinds__kind > img {
+  width: 30%;
+}
+.kinds__kind > p {
+  font-size: 15vw;
+}
+.kinds::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.kinds::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.kinds::-webkit-scrollbar-track {
+  background: transparent;
+}
+.kinds > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100vw;
+  height: 100vh;
+  margin-right: 50px;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+
+.kinds > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+.kinds > a:active {
+  top: 1px;
+}
+.kinds > a:focus {
+  background: #000;
 }
