@@ -1,0 +1,282 @@
+
+/* toots */
+.toots {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.toots__year {
+  color: #467A8A;
+  font-size: 50vw;
+}
+.toots__name {
+  margin-top: -0.5em;
+  font-size: 30vw;
+}
+.toots__nickname {
+  margin-top: -1em;
+  font-size: 10vw;
+  position: relative;
+}
+.toots__nickname > p {
+  color: #D6CBB3;
+  padding-left: 0.2em;
+  position: absolute;
+}
+.toots__nickname > .toots__nickname__back{
+  width: 80vw;
+  padding-top: 0.4em;
+}
+.toots__nickname > .toots__nickname__deco{
+  position: absolute;
+  left: -0.5em;
+  top: 2.5em;
+  width: 90vw;
+}
+.toots__image > img {
+  margin-top: 2em;
+  width: 100vw;
+  align-self: end;
+}
+.toots__quote {
+  margin-top: -7.8em;
+  font-size: 5vw;
+  text-align: center;
+  position: relative;
+}
+.toots__quote > p {
+  color: #D6CBB3;
+  position: absolute;
+  padding-top: 2em;
+  padding-left: 1em;
+  width: 80vw;
+}
+.toots__harmonica {
+  position: relative;
+}
+.toots__harmonica > p {
+  font-size: 8vw;
+  position: absolute;
+  color: #D6CBB3;
+  padding-left: 1em;
+}
+.toots__harmonica__back {
+  width: 85vw;
+}
+.toots__fact {
+  margin-top: -2em;
+  position: relative;
+}
+.toots__fact > p {
+  padding-left: 2em;
+  padding-right: 1em;
+  padding-top: 1.3em;
+  text-align: center;
+  font-size: 6vw;
+  position: absolute;
+  color: #D6CBB3;
+}
+.toots__fact > img {
+  width: 95vw;
+}
+.toots__work {
+  position: relative;
+}
+.toots__work > p {
+  color: #D6CBB3;
+  position: absolute;
+}
+.toots__work > img {
+  width: 90vw;
+}
+
+/* bob */
+.bob {
+  margin-top: 20em;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.bob__year {
+  color: #467A8A;
+  font-size: 50vw;
+}
+.bob__name {
+  margin-top: -0.5em;
+  font-size: 30vw;
+}
+.bob__nickname {
+  margin-top: -1em;
+  font-size: 10vw;
+  position: relative;
+}
+.bob__nickname > p {
+  color: #D6CBB3;
+  padding-left: 0.2em;
+  position: absolute;
+}
+.bob__nickname > .bob__nickname__back{
+  width: 80vw;
+  padding-top: 0.4em;
+}
+.bob__nickname > .bob__nickname__deco{
+  position: absolute;
+  left: -0.5em;
+  top: 2.5em;
+  width: 90vw;
+}
+.bob__image > img {
+  width: 100vw;
+  align-self: end;
+}
+.bob__quote {
+  margin-top: -7.8em;
+  font-size: 5vw;
+  text-align: center;
+  position: relative;
+}
+.bob__quote > p {
+  color: #D6CBB3;
+  position: absolute;
+  padding-top: 2em;
+  padding-left: 1em;
+  width: 80vw;
+}
+.bob__harmonica {
+  position: relative;
+}
+.bob__harmonica > p {
+  font-size: 8vw;
+  position: absolute;
+  color: #D6CBB3;
+  padding-left: 1em;
+}
+.bob__harmonica__back {
+  width: 85vw;
+}
+.bob__fact {
+  margin-top: -2em;
+  position: relative;
+}
+.bob__fact > p {
+  padding-left: 2em;
+  padding-right: 1em;
+  padding-top: 1.3em;
+  text-align: center;
+  font-size: 6vw;
+  position: absolute;
+  color: #D6CBB3;
+}
+.bob__fact > img {
+  width: 95vw;
+}
+.bob__work {
+  position: relative;
+}
+.bob__work > p {
+  color: #D6CBB3;
+  position: absolute;
+}
+.bob__work > img {
+  width: 90vw;
+}
+
+/* stevie */
+.stevie {
+  margin-top: 20em;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.stevie__year {
+  color: #467A8A;
+  font-size: 50vw;
+}
+.stevie__name {
+  margin-top: -0.5em;
+  font-size: 30vw;
+}
+.stevie__nickname {
+  margin-top: -1em;
+  font-size: 10vw;
+  position: relative;
+}
+.stevie__nickname > p {
+  color: #D6CBB3;
+  padding-left: 0.2em;
+  position: absolute;
+}
+.stevie__nickname > .stevie__nickname__back{
+  width: 80vw;
+  padding-top: 0.4em;
+}
+.stevie__nickname > .stevie__nickname__deco{
+  position: absolute;
+  left: -0.5em;
+  top: 2.5em;
+  width: 90vw;
+}
+.stevie__image > img {
+  width: 100vw;
+  align-self: end;
+}
+.stevie__quote {
+  margin-top: -7.8em;
+  font-size: 5vw;
+  text-align: center;
+  position: relative;
+}
+.stevie__quote > p {
+  color: #D6CBB3;
+  position: absolute;
+  padding-top: 2em;
+  padding-left: 1em;
+  width: 80vw;
+}
+.stevie__harmonica {
+  position: relative;
+}
+.stevie__harmonica > p {
+  font-size: 8vw;
+  position: absolute;
+  color: #D6CBB3;
+  padding-left: 1em;
+}
+.stevie__harmonica__back {
+  width: 85vw;
+}
+.stevie__fact {
+  margin-top: -2em;
+  position: relative;
+}
+.stevie__fact > p {
+  padding-left: 2em;
+  padding-right: 1em;
+  padding-top: 1.3em;
+  text-align: center;
+  font-size: 6vw;
+  position: absolute;
+  color: #D6CBB3;
+}
+.stevie__fact > img {
+  width: 95vw;
+}
+.stevie__work {
+  position: relative;
+}
+.stevie__work > p {
+  color: #D6CBB3;
+  position: absolute;
+}
+.stevie__work > img {
+  width: 90vw;
+}
