@@ -10,7 +10,11 @@
     <nav>
       <div class="nav__logo">
         <a href=""><img src="/assets/logo.png" alt=""></a>
-        <img src="/assets/svg/logo-background.svg" alt="">
+        <picture>
+          <source media="(max-width: 799px)" srcset="/assets/svg/logo-background.svg">
+          <source media="(min-width: 1000px)" srcset="/assets/svg/logo-background-large.svg">
+          <img src="/assets/svg/logo-background.svg" alt="">
+        </picture>
       </div>
       <div class="menuToggle">
           <input type="checkbox" />
@@ -20,16 +24,20 @@
           <span></span>
           
         <ul class="menu">
-          <li><a href="#">How does it work</a></li>
-          <li><a href="#">1955</a></li>
-          <li><a href="#">1961</a></li>
-          <li><a href="#">1962</a></li>
-          <li><a href="#">1967</a></li> 
-          <li><a href="#">1990</a></li>
-          <li><a href="#">2000</a></li> 
-          <li><a href="#">noteworthy</a></li> 
+          <li><a href="#how">How does it work</a></li>
+          <li><a href="#toots">1955</a></li>
+          <li><a href="#bob">1961</a></li>
+          <li><a href="#stevie">1962</a></li>
+          <li><a href="#west">1967</a></li> 
+          <li><a href="#john">1990</a></li>
+          <li><a href="#jason">2000</a></li> 
+          <li><a href="#noteworthy">noteworthy</a></li> 
         </ul>
-        <img src="/assets/svg/nav-background.svg" alt="">
+        <picture>
+          <source media="(max-width: 799px)" srcset="/assets/svg/nav-background.svg">
+          <source media="(min-width: 1000px)" srcset="/assets/svg/nav-background-large.svg">
+          <img src="/assets/svg/nav-background.svg" alt="">
+        </picture>
       </div>
     </nav>
 
@@ -52,7 +60,7 @@
         <p>But before we start, how does a harmonica work?</p>
       </div>
 
-      <div class="parts">
+      <div id="how" class="parts">
         <img class="parts__piece bottom" src="/assets/parts/Bottom.png" alt="bottom">
         <img class="parts__piece draw" src="/assets/parts/Draw.png" alt="draw">
         <img class="parts__piece comb" src="/assets/parts/Comb.png" alt="comb">
@@ -92,7 +100,7 @@
 <!--                                                {Toots}                                              -->
 <!--                                                                                                     -->
 <!--------------------------------------------------------------------------------------------------------->
-      <div class="toots artist title">
+      <div id="toots" class="toots artist title">
         <div class="toots__year artist__year">1900</div>
         <div class="toots__name artist__name">toots</div>
         <div class="toots__nickname artist__nickname">
@@ -131,17 +139,17 @@
 <!--                                                 {Bob}                                               -->
 <!--                                                                                                     -->
 <!--------------------------------------------------------------------------------------------------------->
-      <div class="bob artist title">
+      <div id="bob" class="bob artist title">
         <div class="bob__year artist__year">1955</div>
-        <div class="bob__name artist__name">toots</div>
+        <div class="bob__name artist__name">Bob Dylan</div>
         <div class="bob__nickname artist__nickname">
-          <p>a belgian legend</p>
+          <p>Master sing & song writer </p>
           <img class="bob__nickname__back artist__nickname__back" src="/assets/svg/nickname-back.svg" alt="">
           <img class="bob__nickname__deco artist__nickname__deco" src="/assets/svg/deco.svg" alt="">
         </div>
         
         <div class="bob__quote artist__quote text">
-          <p>"Het is niet gemakkelijk om met mij samen te leven want ik denk dat ik soms te obsessed ben door mijn mondharmonica."</p>
+          <p>"The Harmonica is the world’s best-selling musical instrument. You’re welcome."</p>
           <img class="bob__quote__back artist__quote__back" src="/assets/svg/quote-back.svg" alt="">
         </div>
 
@@ -150,11 +158,11 @@
         </div>
 
         <div class="bob__harmonica artist__harmonica">
-          <p>Chromatic</p>
+          <p>Diatonic</p>
           <img class="bob__harmonica__back artist__harmonica__back" src="/assets/svg/harmonica-back.svg" alt="">
         </div>
         <div class="bob__fact artist__fact text">
-          <p>Toots Thielemans was lid van de circa 25 leden tellende Snorrenclub Antwerpen. Hij werd in 1988 door hen tot "Snor van het Jaar" uitgeroepen.</p>
+          <p>Almost all of his studio recordings has been original songs. One exception was his self-titled debut which was comprised mainly of standards. The others were from two periods when he allegedly suffered from a case of "writer's block", the early 1970s ("Self Portrait" and "Dylan") and two from the the early 1990s ("Good As I've Been to You" and "World Gone Wrong", respectively).</p>
           <img src="/assets/svg/fact-back.svg" alt="">
         </div>
         <div class="bob__work artist__work">
@@ -170,17 +178,17 @@
 <!--                                               {Stevie}                                              -->
 <!--                                                                                                     -->
 <!--------------------------------------------------------------------------------------------------------->
-      <div class="stevie artist title">
+      <div id="stevie" class="stevie artist title">
         <div class="stevie__year artist__year">1961</div>
-        <div class="stevie__name artist__name">toots</div>
+        <div class="stevie__name artist__name">Stevie Wonder</div>
         <div class="stevie__nickname artist__nickname">
-          <p>a belgian legend</p>
+          <p>The wonder man</p>
           <img class="stevie__nickname__back artist__nickname__back" src="/assets/svg/nickname-back.svg" alt="">
           <img class="stevie__nickname__deco artist__nickname__deco" src="/assets/svg/deco.svg" alt="">
         </div>
         
         <div class="stevie__quote artist__quote text">
-          <p>"Het is niet gemakkelijk om met mij samen te leven want ik denk dat ik soms te obsessed ben door mijn mondharmonica."</p>
+          <p>"I never imagined I’d meet Berry Gordy who told me when he first heard me sing, “You know, your singing’s okay, but I like your harmonica playing better."</p>
           <img class="stevie__quote__back artist__quote__back" src="/assets/svg/quote-back.svg" alt="">
         </div>
 
@@ -193,7 +201,7 @@
           <img class="stevie__harmonica__back artist__harmonica__back" src="/assets/svg/harmonica-back.svg" alt="">
         </div>
         <div class="stevie__fact artist__fact text">
-          <p>Toots Thielemans was lid van de circa 25 leden tellende Snorrenclub Antwerpen. Hij werd in 1988 door hen tot "Snor van het Jaar" uitgeroepen.</p>
+          <p>Stevie wonder has won 21 Grammy Awards (a record for most Grammy Awards).</p>
           <img src="/assets/svg/fact-back.svg" alt="">
         </div>
         <div class="stevie__work artist__work">
@@ -209,7 +217,7 @@
 <!--                                                 {West}                                              -->
 <!--                                                                                                     -->
 <!--------------------------------------------------------------------------------------------------------->
-      <div class="west artist title">
+      <div id="west" class="west artist title">
         <div class="west__year artist__year">1961</div>
         <div class="west__name artist__name">toots</div>
         <div class="west__nickname artist__nickname">
@@ -248,11 +256,11 @@
 <!--                                                 {John}                                              -->
 <!--                                                                                                     -->
 <!--------------------------------------------------------------------------------------------------------->
-      <div class="john artist title">
-        <div class="john__year artist__year">1961</div>
-        <div class="john__name artist__name">toots</div>
+      <div id="john" class="john artist title">
+        <div class="john__year artist__year">1967</div>
+        <div class="john__name artist__name">John Popper</div>
         <div class="john__nickname artist__nickname">
-          <p>a belgian legend</p>
+          <p>Rock ‘n roll master</p>
           <img class="john__nickname__back artist__nickname__back" src="/assets/svg/nickname-back.svg" alt="">
           <img class="john__nickname__deco artist__nickname__deco" src="/assets/svg/deco.svg" alt="">
         </div>
@@ -267,11 +275,11 @@
         </div>
 
         <div class="john__harmonica artist__harmonica">
-          <p>Chromatic</p>
+          <p>Diatonic</p>
           <img class="john__harmonica__back artist__harmonica__back" src="/assets/svg/harmonica-back.svg" alt="">
         </div>
         <div class="john__fact artist__fact text">
-          <p>Toots Thielemans was lid van de circa 25 leden tellende Snorrenclub Antwerpen. Hij werd in 1988 door hen tot "Snor van het Jaar" uitgeroepen.</p>
+          <p>Frontman van de rockgroep Blues Traveler.</p>
           <img src="/assets/svg/fact-back.svg" alt="">
         </div>
         <div class="john__work artist__work">
@@ -287,11 +295,11 @@
 <!--                                                 {Jason}                                             -->
 <!--                                                                                                     -->
 <!--------------------------------------------------------------------------------------------------------->
-      <div class="jason artist title">
+      <div id="jason" class="jason artist title">
         <div class="jason__year artist__year">1961</div>
-        <div class="jason__name artist__name">toots</div>
+        <div class="jason__name artist__name">Jason Ricci</div>
         <div class="jason__nickname artist__nickname">
-          <p>a belgian legend</p>
+          <p>most talented of the 21th century</p>
           <img class="jason__nickname__back artist__nickname__back" src="/assets/svg/nickname-back.svg" alt="">
           <img class="jason__nickname__deco artist__nickname__deco" src="/assets/svg/deco.svg" alt="">
         </div>
@@ -306,7 +314,7 @@
         </div>
 
         <div class="jason__harmonica artist__harmonica">
-          <p>Chromatic</p>
+          <p>Diatonic</p>
           <img class="jason__harmonica__back artist__harmonica__back" src="/assets/svg/harmonica-back.svg" alt="">
         </div>
         <div class="jason__fact artist__fact text">
@@ -327,7 +335,7 @@
 <!--                                                                                                     -->
 <!--------------------------------------------------------------------------------------------------------->
     
-      <div class="noteworthy">
+      <div id="noteworthy" class="noteworthy">
         <div class="noteworthy__title">
           <h2>Noteworthy</h2>
         </div>

@@ -1,0 +1,135 @@
+@media screen and (min-width: 1000px) {
+  /* nav */
+  .nav__logo > a > img {
+    position: absolute;
+    width: 10vw;
+    padding-left: 1em;
+  }
+  .nav__logo > picture > img {
+    margin-top: -5em;
+    width: 34vw;
+  }
+  .menuToggle > span {
+    display: none;
+  }
+  .menu {
+    position: absolute;
+    width: 100vw;
+    height: 20vh;
+    padding-top: 0em;
+
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+
+    background: none;
+    list-style-type: none;
+
+    transform: none;
+    transform-origin: none;
+    transition: none;
+  }
+  .menu li {
+    padding: 0.2em 0;
+    font-size: 20vw;
+  }
+
+  /* header */
+  .header__title {
+    margin-top: 10em;
+    margin-bottom: -1em;
+  }
+  .header__title > h1 {
+    font-size: 10vw;
+  }
+  .header__title > img {
+    width: 60vw;
+    margin-top: 3em;
+  }
+  .header__undertitle {
+    margin-top: -1.7em;
+    margin-right: 16em;
+  }
+  .header__undertitle > p {
+    font-size: 4vw;
+  }
+  .header__undertitle > img {
+    width: 30vw;
+    margin-top: 2.3em;
+  }
+  .header__button {
+    font-size: 2vw;
+    margin-top: 3em;
+  }
+
+  /* intro */
+  .intro {
+    display: flex;
+    justify-content: center;
+    margin-top: 15em;
+    font-size: 3vw;
+  }
+
+  /* parts */
+  .parts__piece {
+    position: absolute;
+    width: 10vw;
+  }
+  .parts__piece:hover {
+    width: 11vw;
+  }
+  .parts > p {
+    font-size: 3vw;
+    bottom: 2em;
+  }
+
+  /* kinds */
+  .kinds {
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+  .kinds__kind {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .kinds__kind > .kind {
+    position: absolute;
+    width: 8vw;
+    bottom: 1em;
+  }
+  .kinds__kind > .back {
+    width: 20vw;
+    justify-self: end;
+  }
+  .kinds__kind > p {
+    font-size: 5vw;
+    padding-bottom: 2em;
+  }
+
+  .kinds::-webkit-scrollbar {
+    all:revert;
+  }
+  .kinds::-webkit-scrollbar-thumb {
+    all:revert;
+  }
+  .kinds::-webkit-scrollbar-track {
+    all:revert;
+  }
+  
+  .kinds > div {
+    scroll-snap-align: none;
+    flex-shrink: 1;
+    width: 100vw;
+    height: 100vh;
+    margin-right: 50px;
+    transform-origin: none;
+    transform: none;
+    transition: none;
+    position: relative;
+  }
+
+}

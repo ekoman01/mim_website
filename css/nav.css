@@ -3,10 +3,10 @@ nav {
   padding-left: 0.2em;
   padding-right: 0.2em;
   display: flex;
-  top: 0;
-  left: 0;
   justify-content: space-between;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 1;
   width: 100vw;
   background-color: #D6CBB3;
@@ -18,13 +18,13 @@ nav {
   position: absolute;
   width: 30vw;
 }
-.nav__logo > img {
+.nav__logo > picture > img {
   margin-top: -1em;
   margin-left: -0.2em;
   width: 35vw;
 }
 
-.menuToggle > img {
+.menuToggle > picture > img {
   position: absolute;
   top: 0;
   right: 0;

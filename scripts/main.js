@@ -50,7 +50,6 @@ const intro_part = () => {
 
   tl.to(harmonica, {
     step: harmonicaPositions.length - 1,
-    duration: 5,
     ease: SteppedEase.config(harmonicaPositions.length - 1),
     onUpdate: () => {
       console.log(harmonica.step);
