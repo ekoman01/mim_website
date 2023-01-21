@@ -10,11 +10,17 @@ body {
   overflow-x: hidden;
 }
 
-.normal_font {
+.title {
   font-family: doublebass, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+.text {
+  font-family: bilo, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
 
 a {
   text-decoration: none;
@@ -183,6 +189,7 @@ ul {
 }
 .kinds__kind > p {
   font-size: 15vw;
+  padding-bottom: 4em;
 }
 .kinds::-webkit-scrollbar {
   width: 10px;
@@ -251,6 +258,16 @@ ul {
 .toots__image > img {
   width: 100vw;
   align-self: end;
+}
+
+.toots__harmonica {
+  font-size: 10vw;
+}
+.toots__fact {
+  font-size: 8vw;
+}
+.toots__work {
+  width: 100vw;
 }
 
 /* bob */

@@ -45,7 +45,6 @@ nav {
 .menuToggle a {
   text-decoration: none;
   color: #232323;
-
   transition: color 0.3s ease;
 }
 
@@ -133,6 +132,11 @@ nav {
   height: 100vh;
   padding-top: 5em;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -145,13 +149,13 @@ nav {
 }
 
 .menu li {
-  padding: 10px 0;
-  font-size: 22px;
+  padding: 0.5em 0;
+  font-size: 10vw;
 }
 
 /*
  * And let's slide it in from the left
  */
 .menuToggle input:checked ~ ul {
-  transform: translate(-90vw, 0);
+  transform: translate(-94vw, 0);
 }
