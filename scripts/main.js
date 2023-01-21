@@ -4,6 +4,24 @@ import "/css/responsive.css";
 import "/css/artists.css";
 
 gsap.registerPlugin(ScrollTrigger);
+const mm = gsap.matchMedia();
+
+const sizes = [
+  {
+    name: "small",
+    xBottom: 150,
+    xDraw: 75,
+    xBlow: -75,
+    xTop: -150,
+  },
+  {
+    name: "large",
+    xBottom: 500,
+    xDraw: 250,
+    xBlow: -250,
+    xTop: -500,
+  },
+];
 
 {
 let floating = true;
@@ -65,19 +83,42 @@ const intro_part = () => {
 };
 
 const deconstruct_part = () => {
+  let xBottom = 0, xDraw = 0, xBlow = 0, xTop = 0;
+  mm.add(
+    {
+      small: "(max-width: 999px)",
+      large: "(min-width: 1000px)",
+    },
+    (context) => {
+      const { conditions } = context;
+      if (conditions.small) {
+        xBottom = sizes[0].xBottom;
+        xDraw = sizes[0].xDraw;
+        xBlow = sizes[0].xBlow;
+        xTop = sizes[0].xTop;
+      } 
+      else if (conditions.large) {
+         xBottom = sizes[1].xBottom;
+         xDraw = sizes[1].xDraw;
+         xBlow = sizes[1].xBlow;
+         xTop = sizes[1].xTop;
+       }
+    }
+  );
+
   const tlParts = gsap.timeline({
     scrollTrigger: {
       trigger: ".parts",
       scrub: true,
-      //markers: true,
+      markers: true,
       start: "top 80%",
-      end: "bottom 85%",
+      end: "70% 85%",
     },
   });
-  tlParts.to(".bottom", { x: 150 });
-  tlParts.to(".draw", { x: 75 }, "<");
-  tlParts.to(".blow", { x: -75 }, "<");
-  tlParts.to(".top", { x: -150 }, "<");
+  tlParts.to(".bottom", { x: xBottom });
+  tlParts.to(".draw", { x: xDraw }, "<");
+  tlParts.to(".blow", { x: xBlow }, "<");
+  tlParts.to(".top", { x: xTop }, "<");
 }
 
 const artists_part = () => {
