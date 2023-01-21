@@ -92,9 +92,9 @@ const yearTl = gsap.timeline({
 });
   yearTl.to(num, { var: 1955, duration: 3, ease: "none", onUpdate: changeNumber, });
   
-  yearTl.fromTo(".toots__name", { y: 800 }, { y: 0 }, "<2");
-  yearTl.fromTo(".toots__nickname", { y: 800 }, { y: 0 }, "<");
-  yearTl.fromTo(".toots__image", { y: 800 }, { y: 0 }, "<");
+  yearTl.fromTo(".toots__name", { y: 800 }, { y: 0 }, "<");
+  yearTl.fromTo(".toots__nickname", { y: 800 }, { y: 0 }, "<1");
+  yearTl.fromTo(".toots__image", { y: 800 }, { y: 0 }, "<2");
 
   yearTl.fromTo(".toots__name", { y: 0 }, { y: -500 }, "<4");
   yearTl.fromTo(".toots__nickname", { y: 0 }, { y: -500 }, "<");
@@ -103,9 +103,10 @@ const yearTl = gsap.timeline({
 
   yearTl.fromTo(".toots__quote", { y: 0 }, { y: -500 }, "<2");
   yearTl.fromTo(".toots__image", { opacity: 1 }, { opacity: 0, duration: 3}, "<");
+  yearTl.fromTo(".toots__year", { y: 0 }, { y: -200}, "<");
 
-  yearTl.fromTo(".toots__harmonica", { y: 800 }, { y: 0 }, "<2");
-  yearTl.fromTo(".toots__fact", { y: 800 }, { y: 0 }, "<");
-  yearTl.fromTo(".toots__work", { y: 800 }, { y: 0 }, "<");
+  yearTl.fromTo(".toots__harmonica", { y: 100 }, { y: -500 }, "<2");
+  yearTl.fromTo(".toots__fact", { y: 100 }, { y: -500 }, "<");
+  yearTl.fromTo(".toots__work", { y: 100 }, { y: -500 }, "<");
 
 init();
