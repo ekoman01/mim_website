@@ -237,3 +237,8 @@ ul {
 .kinds > a:focus {
   background: #000;
 }
+
+.noteworthy {
+  height: 100vh;
+  margin-top: 20em;
+}

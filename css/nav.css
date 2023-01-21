@@ -44,7 +44,7 @@ nav {
 
 .menuToggle a {
   text-decoration: none;
-  color: #232323;
+  color: #ffffff;
   transition: color 0.3s ease;
 }
 
@@ -137,7 +137,7 @@ nav {
   align-items: center;
   justify-content: start;
 
-  background: #ededed;
+  background: #000000bf;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -149,7 +149,7 @@ nav {
 }
 
 .menu li {
-  padding: 0.5em 0;
+  padding: 0.2em 0;
   font-size: 10vw;
 }
 

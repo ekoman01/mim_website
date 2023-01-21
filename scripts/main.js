@@ -1,4 +1,3 @@
-
 import '/css/style.css'
 import "/css/nav.css";
 import "/css/responsive.css";
@@ -87,9 +86,9 @@ const artists_part = () => {
     { name: "toots", startYear: 1900, endYear: 1955 },
     { name: "bob", startYear: 1955, endYear: 1961 },
     { name: "stevie", startYear: 1961, endYear: 1962 },
-    // { name: "west", startYear: 1962, endYear: 1967 },
-    // {name : "john", startYear : 1967, endYear : 1990},
-    // {name : "jason", startYear : 1990 , endYear : 2000},
+    { name: "west", startYear: 1962, endYear: 1967 },
+    {name : "john", startYear : 1967, endYear : 1990},
+    {name : "jason", startYear : 1990 , endYear : 2000},
   ];
 
   for (let artist in artists) {
@@ -109,7 +108,7 @@ const artists_part = () => {
         pin: true,
         //markers: true,
         start: "top 10%",
-        end: "+=4000",
+        end: "+=6000",
         scrub: true,
       },
     });
