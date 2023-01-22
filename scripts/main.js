@@ -1,7 +1,7 @@
 import '../css/style.css';
 import "../css/nav.css";
-import "../css/responsive.css";
 import "../css/artists.css";
+import "../css/responsive.css";
 
 gsap.registerPlugin(ScrollTrigger);
 const mm = gsap.matchMedia();
@@ -54,7 +54,7 @@ const intro_part = () => {
 
   const tl = gsap.timeline({
     scrollTrigger: {
-      trigger: ".part_one",
+      trigger: ".content",
       scrub: true,
       //markers: true,
       pin: ".harmonica",

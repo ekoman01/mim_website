@@ -117,15 +117,15 @@
   }
 
   .kinds::-webkit-scrollbar {
-    all:revert;
+    all: revert;
   }
   .kinds::-webkit-scrollbar-thumb {
-    all:revert;
+    all: revert;
   }
   .kinds::-webkit-scrollbar-track {
-    all:revert;
+    all: revert;
   }
-  
+
   .kinds > div {
     scroll-snap-align: none;
     flex-shrink: 1;
@@ -138,4 +138,142 @@
     position: relative;
   }
 
+  /* artists */
+  .artist {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .artist__year {
+    grid-column: 1 / 2;
+    justify-self: center;
+    font-size: 50vw;
+    margin-top: -0.5em;
+    position: relative;
+  }
+  .artist__name {
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+    justify-self: center;
+    margin-top: -2em;
+    font-size: 20vw;
+  }
+  .artist__nickname {
+    margin-top: -1em;
+    font-size: 3vw;
+    position: relative;
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+    justify-self: end;
+  }
+  .artist__nickname > p {
+    color: #d6cbb3;
+    padding-left: 0.2em;
+    position: absolute;
+  }
+  .artist__nickname > .artist__nickname__back {
+    width: 25vw;
+    padding-top: 0.4em;
+  }
+  .artist__nickname > .artist__nickname__deco {
+    position: absolute;
+    left: -0.5em;
+    top: 2.5em;
+    width: 90vw;
+  }
+  .artist__image {
+    grid-column: 1 / 1;
+    margin-top: -120vh;
+  }
+  .artist__image > img {
+    width: 50vw;
+    margin-top: auto;
+  }
+  .artist__quote {
+    margin-top: -7.8em;
+    font-size: 5vw;
+    text-align: center;
+    position: relative;
+  }
+  .artist__quote > p {
+    color: #d6cbb3;
+    position: absolute;
+    padding-top: 2em;
+    padding-left: 1em;
+    width: 80vw;
+  }
+  .artist__harmonica {
+    position: relative;
+  }
+  .artist__harmonica > p {
+    font-size: 8vw;
+    position: absolute;
+    color: #d6cbb3;
+    padding-left: 1em;
+  }
+  .artist__harmonica__back {
+    width: 85vw;
+  }
+  .artist__fact {
+    margin-top: -2em;
+    position: relative;
+  }
+  .artist__fact > p {
+    padding-left: 2em;
+    padding-right: 1em;
+    padding-top: 1.3em;
+    text-align: center;
+    font-size: 6vw;
+    position: absolute;
+    color: #d6cbb3;
+  }
+  .artist__fact > img {
+    width: 95vw;
+  }
+  .artist__work {
+    position: relative;
+  }
+  .artist__work > p {
+    color: #d6cbb3;
+    position: absolute;
+  }
+  .artist__work > img {
+    width: 90vw;
+  }
+
+  /* bob */
+  .bob {
+    margin-top: 20em;
+  }
+
+  .bob__image {
+    margin-top: -4em;
+  }
+
+  /* stevie */
+  .stevie {
+    margin-top: 20em;
+  }
+
+  /* west */
+  .west {
+    margin-top: 20em;
+  }
+
+  /* john */
+  .john {
+    margin-top: 20em;
+  }
+  .john__image {
+    margin-top: 1em;
+  }
+
+  /* jason */
+  .jason {
+    margin-top: 20em;
+  }
+  .jason__image {
+    margin-top: -1em;
+  }
 }

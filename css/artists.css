@@ -112,6 +112,10 @@
   margin-top: 20em;
 }
 
+.west__image > img {
+  width: 200vw;
+}
+
 /* john */
 .john {
   margin-top: 20em;
