@@ -1,7 +1,7 @@
-import '/css/style.css'
-import "/css/nav.css";
-import "/css/responsive.css";
-import "/css/artists.css";
+import '../css/style.css';
+import "../css/nav.css";
+import "../css/responsive.css";
+import "../css/artists.css";
 
 gsap.registerPlugin(ScrollTrigger);
 const mm = gsap.matchMedia();
@@ -110,7 +110,7 @@ const deconstruct_part = () => {
     scrollTrigger: {
       trigger: ".parts",
       scrub: true,
-      markers: true,
+      //markers: true,
       start: "top 80%",
       end: "70% 85%",
     },
