@@ -6,10 +6,6 @@ html, body {
   background-color: #D6CBB3;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .title {
   font-family: doublebass, sans-serif;
   font-weight: 400;
@@ -30,7 +26,7 @@ ul {
   list-style-type: none;
 }
 
-.content {
+.part_one {
   height: 100vh;
   width: 100vw;
   position: relative;
@@ -240,5 +236,22 @@ ul {
 
 .noteworthy {
   height: 100vh;
-  margin-top: 20em;
+  margin-top: 30em;
+}
+
+.noteworthy__title {
+  font-size: 11vw;
+  text-align: center;
+  padding-top: 0.2em;
+}
+
+.noteworthy__text {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+
+.noteworthy__spotify {
+  padding-left: 1em;
+  padding-right: 1em;
 }

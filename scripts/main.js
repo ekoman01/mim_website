@@ -54,7 +54,7 @@ const intro_part = () => {
 
   const tl = gsap.timeline({
     scrollTrigger: {
-      trigger: ".content",
+      trigger: ".part_one",
       scrub: true,
       //markers: true,
       pin: ".harmonica",
@@ -70,7 +70,6 @@ const intro_part = () => {
     step: harmonicaPositions.length - 1,
     ease: SteppedEase.config(harmonicaPositions.length - 1),
     onUpdate: () => {
-      console.log(harmonica.step);
       const harmonicaPosition = harmonicaPositions[harmonica.step];
       $harmonicaImage.style.transform = `translate(${
         -100 * harmonicaPosition.x * harmonicaStepPercentageX
