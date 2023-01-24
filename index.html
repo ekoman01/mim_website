@@ -7,39 +7,32 @@
     <title>MIM - Harmonica</title>
   </head>
   <body class="text">
-    <nav>
-      <div class="nav__logo">
-        <a href=""><img src="./assets/logo.png" alt=""></a>
-        <picture>
-          <source media="(max-width: 799px)" srcset="./assets/svg/logo-background.svg">
-          <source media="(min-width: 1000px)" srcset="./assets/svg/logo-background-large.svg">
-          <img src="./assets/svg/logo-background.svg" alt="">
-        </picture>
+    <div class="nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="nav-title">
+          <a href="#"><img src="./assets/logo.png" alt=""></a>
+        </div>
       </div>
-      <div class="menuToggle">
-          <input type="checkbox" />
-          
+      <div class="nav-btn">
+        <label for="nav-check">
           <span></span>
           <span></span>
           <span></span>
-          
-        <ul class="menu">
-          <li><a href="#how">How does it work</a></li>
-          <li><a href="#toots">1955</a></li>
-          <li><a href="#bob">1961</a></li>
-          <li><a href="#stevie">1962</a></li>
-          <li><a href="#west">1967</a></li> 
-          <li><a href="#john">1990</a></li>
-          <li><a href="#jason">2000</a></li> 
-          <li><a href="#noteworthy">noteworthy</a></li> 
-        </ul>
-        <picture>
-          <source media="(max-width: 799px)" srcset="./assets/svg/nav-background.svg">
-          <source media="(min-width: 1000px)" srcset="./assets/svg/nav-background-large.svg">
-          <img src="./assets/svg/nav-background.svg" alt="">
-        </picture>
+        </label>
       </div>
-    </nav>
+      
+      <div class="nav-links">
+        <a href="#how">How does it work</a>
+        <a href="#toots">1955 <span class="arrow"> ↓</span> </a>
+        <a class="drop" href="#bob">1961</a>
+        <a class="drop" href="#stevie">1962</a>
+        <a class="drop" href="#west">1967</a>
+        <a class="drop" href="#john">1990</a>
+        <a class="drop" href="#jason">2000</a>
+        <a class="drop" href="#noteworthy">noteworthy</a>
+      </div>
+    </div>
 
     <div class="part_one">
       <section class="header">

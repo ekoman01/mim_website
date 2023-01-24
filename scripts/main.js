@@ -162,7 +162,7 @@ const artists_part = () => {
     artistTl.fromTo("." + artists[artist].name + "__image", { y: 800 }, { y: 0 }, "<2");
 
     artistTl.fromTo("." + artists[artist].name + "__name", { y: 0 }, { y: -500 }, "<4");
-    artistTl.fromTo("." + artists[artist].name + "__nickname", { y: 0 }, { y: -500 }, "<");
+    artistTl.fromTo("." + artists[artist].name + "__nickname", { y: 0 }, { y: -800 }, "<");
 
     artistTl.fromTo("." + artists[artist].name + "__quote", { y: 800 }, { y: 0 }, "<6");
 
