@@ -97,11 +97,9 @@
 .bob {
   margin-top: 20em;
 }
-
 .bob__image {
   margin-top: -10em;
 }
-
 .bob__name {
   text-align: center;
   margin-top: -1em;
@@ -109,7 +107,6 @@
 .bob__nickname {
   padding-top: 0.5em;
 }
-
 .bob__quote {
   margin-top: -15.8em;
   margin-bottom: 6em;
@@ -118,6 +115,16 @@
 /* stevie */
 .stevie {
   margin-top: 20em;
+}
+.stevie__image {
+  margin-top: -8em;
+}
+.stevie__name {
+  text-align: center;
+}
+.stevie__quote {
+  margin-top: -16em;
+  margin-bottom: 6em;
 }
 
 /* west */
@@ -132,12 +139,37 @@
 .john__image {
   margin-top: 1em;
 }
+.john__image {
+  margin-top: -3em;
+}
+.john__name {
+  text-align: center;
+  margin-top: -0.8em;
+}
+.john__nickname {
+  padding-top: 0.5em;
+}
+.john__quote {
+  margin-top: -16em;
+  margin-bottom: 6em;
+}
 
 /* jason */
 .jason {
   margin-top: 20em;
 }
 .jason__image {
-  margin-top: -1em;
+  margin-top: -7em;
+}
+.jason__name {
+  text-align: center;
+  margin-top: -0.8em;
+}
+.jason__nickname {
+  padding-top: 0.5em;
+}
+.jason__quote {
+  margin-top: -16em;
+  margin-bottom: 6em;
 }
 

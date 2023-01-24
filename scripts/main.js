@@ -15,6 +15,13 @@ const sizes = [
     xTop: -150,
   },
   {
+    name: "medium",
+    xBottom: 250,
+    xDraw: 125,
+    xBlow: -125,
+    xTop: -250,
+  },
+  {
     name: "large",
     xBottom: 500,
     xDraw: 250,
@@ -85,7 +92,8 @@ const deconstruct_part = () => {
   let xBottom = 0, xDraw = 0, xBlow = 0, xTop = 0;
   mm.add(
     {
-      small: "(max-width: 999px)",
+      small: "(max-width: 620px)",
+      medium: "(min-width: 620px, max-width: 1000px)",
       large: "(min-width: 1000px)",
     },
     (context) => {
@@ -95,13 +103,17 @@ const deconstruct_part = () => {
         xDraw = sizes[0].xDraw;
         xBlow = sizes[0].xBlow;
         xTop = sizes[0].xTop;
-      } 
-      else if (conditions.large) {
-         xBottom = sizes[1].xBottom;
-         xDraw = sizes[1].xDraw;
-         xBlow = sizes[1].xBlow;
-         xTop = sizes[1].xTop;
-       }
+      } else if (conditions.medium) {
+        xBottom = sizes[1].xBottom;
+        xDraw = sizes[1].xDraw;
+        xBlow = sizes[1].xBlow;
+        xTop = sizes[1].xTop;
+      } else if (conditions.large) {
+        xBottom = sizes[2].xBottom;
+        xDraw = sizes[2].xDraw;
+        xBlow = sizes[2].xBlow;
+        xTop = sizes[2].xTop;
+      }
     }
   );
 

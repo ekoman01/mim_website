@@ -1,10 +1,38 @@
-@media screen and (min-width: 500px) and (max-width: 999px) {
-  
-}
-
-@media screen and (min-width: 800px) and (max-width: 999px) {
+@media screen and (min-width: 620px) and (max-width: 1100px) {
+  /* intro */
   .intro {
     margin-top: 12em;
+  }
+  /* parts */
+  .parts__piece {
+    position: absolute;
+    width: 20vw;
+  }
+  .parts__piece:hover {
+    width: 21vw;
+  }
+  .parts > p {
+    font-size: 5vw;
+    bottom: 6em;
+  }
+  .parts__name {
+    margin-top: 50vh;
+    font-size: 6vw;
+  }
+
+  /* kinds */
+  .kinds__kind > .kind {
+    position: absolute;
+    width: 20vw;
+    bottom: 1em;
+  }
+  .kinds__kind > .back {
+    width: 40vw;
+    justify-self: end;
+  }
+  .kinds__kind > p {
+    font-size: 10vw;
+    padding-bottom: 2em;
   }
 }
 
@@ -87,7 +115,9 @@
     font-size: 5vw;
     padding-bottom: 2em;
   }
-
+  .arrows{
+    display: none;
+  }
   .kinds::-webkit-scrollbar {
     all: revert;
   }
