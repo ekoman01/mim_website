@@ -13,7 +13,12 @@
   }
   .nav__logo > picture > img {
     margin-top: -5em;
-    width: 34vw;
+    width: 32vw;
+  }
+  .menuToggle > picture > img {
+    margin-top: -2em;
+    margin-right: -2.2em;
+    width: 70vw;
   }
   .menuToggle > span {
     display: none;
