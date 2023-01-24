@@ -9,9 +9,6 @@
 }
 
 @media screen and (min-width: 1000px) {
-  /* nav */
-  
-  
   /* header */
   .header__title {
     margin-top: 10em;
@@ -57,8 +54,12 @@
     width: 11vw;
   }
   .parts > p {
-    font-size: 3vw;
-    bottom: 2em;
+    font-size: 2vw;
+    bottom: 3em;
+  }
+  .parts__name {
+    margin-top: 65vh;
+    font-size: 2vw;
   }
 
   /* kinds */
@@ -119,7 +120,7 @@
   .artist__year {
     grid-column: 1 / 2;
     justify-self: center;
-    font-size: 30vw;
+    font-size: 50vw;
     margin-top: -0.5em;
     position: relative;
   }

@@ -118,6 +118,15 @@ const deconstruct_part = () => {
   tlParts.to(".draw", { x: xDraw }, "<");
   tlParts.to(".blow", { x: xBlow }, "<");
   tlParts.to(".top", { x: xTop }, "<");
+
+  
+  let part = document.querySelectorAll(".parts__piece");
+  const name = document.querySelector(".parts__name");
+    for (let i = 0; i < part.length; i++) {
+      part[i].addEventListener("mouseover", (event) => {
+        name.innerHTML = part[i].id;
+      });
+    }
 }
 
 const artists_part = () => {

@@ -118,6 +118,16 @@ ul {
   text-align: center;
   bottom: 2em;
 }
+.parts__name {
+  text-align: center;
+  margin-top: 50vh;
+  font-size: 2em;
+  background-image: url("/assets/svg/undertitle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #D6CBB3;
+  padding: 1em;
+}
 
 /* harmonica animation */
 .harmonica {
@@ -190,6 +200,23 @@ ul {
 }
 .kinds__kind > .back {
   width: 60vw;
+}
+.arrows {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: none;
+}
+.arrow__chromatic {
+ justify-content: end;
+}
+.arrow__tremolo {
+ justify-content: start;
 }
 .kinds__kind > p {
   font-size: 15vw;

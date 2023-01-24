@@ -99,7 +99,20 @@
 }
 
 .bob__image {
-  margin-top: -4em;
+  margin-top: -10em;
+}
+
+.bob__name {
+  text-align: center;
+  margin-top: -1em;
+}
+.bob__nickname {
+  padding-top: 0.5em;
+}
+
+.bob__quote {
+  margin-top: -15.8em;
+  margin-bottom: 6em;
 }
 
 /* stevie */
