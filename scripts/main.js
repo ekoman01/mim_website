@@ -141,6 +141,18 @@ const deconstruct_part = () => {
     }
 }
 
+const kind_hover = () => {
+  let kind = document.querySelectorAll(".kind");
+  for (let i = 0; i < kind.length; i++) {
+    kind[i].addEventListener("mouseover", (event) => {
+      kind[i].src = "../assets/animation/" + kind[i].id + "_hover.png";
+    });
+    kind[i].addEventListener("mouseout", (event) => {
+      kind[i].src = "../assets/animation/" + kind[i].id + "_.png";
+    });
+  }
+}
+
 const artists_part = () => {
   const artists = [
     { name: "toots", startYear: 1900, endYear: 1955 },
@@ -200,6 +212,7 @@ const artists_part = () => {
 const init = () => {
   intro_part();
   deconstruct_part();
+  kind_hover();
   artists_part();
 }
 

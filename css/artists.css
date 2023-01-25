@@ -35,7 +35,7 @@
   width: 90vw;
 }
 .artist__image {
-  margin-top: 2em;
+  align-self: bottom;
 }
 .artist__image > img {
   width: 100vw;
