@@ -141,7 +141,7 @@ const deconstruct_part = () => {
     }
 }
 
-const kind_hover = () => {
+const kinds = () => {
   let kind = document.querySelectorAll(".kind");
   for (let i = 0; i < kind.length; i++) {
     kind[i].addEventListener("mouseover", (event) => {
@@ -150,6 +150,37 @@ const kind_hover = () => {
     kind[i].addEventListener("mouseout", (event) => {
       kind[i].src = "../assets/animation/" + kind[i].id + "_.png";
     });
+    kind[i].addEventListener("click", (event) => {
+      showDetails(kind[i].id);
+    });
+  }
+}
+
+let pressed = false;
+
+const showDetails = (id) => {
+  const types = ["Chromatic", "Diatonic", "Tremolo"];
+  for (let type in types) {
+    if (id == types[type]) {
+      if (!pressed) {
+        document.querySelector(".info__text__" + types[type].toLowerCase()).style.display = "flex";
+        pressed = true;
+        for (let other in types) {
+          if (id != types[other]) {
+            document.querySelector("." + types[other].toLowerCase() + "__kind").style.display = "none";
+          }
+        }
+      }
+      else if (pressed) {
+        document.querySelector(".info__text__" + types[type].toLowerCase()).style.display = "none";
+        pressed = false;
+        for (let other in types) {
+          if (id != types[other]) {
+            document.querySelector("." + types[other].toLowerCase() + "__kind").style.display = "flex";
+          }
+        }
+      }
+    }
   }
 }
 
@@ -212,7 +243,7 @@ const artists_part = () => {
 const init = () => {
   intro_part();
   deconstruct_part();
-  kind_hover();
+  kinds();
   artists_part();
 }
 

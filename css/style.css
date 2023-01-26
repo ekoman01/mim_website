@@ -268,7 +268,23 @@ ul {
 .kinds > a:focus {
   background: #000;
 }
+.info {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-left: 0.4em;
+  padding-right: 0.2em;
+  display: none;
+}
+.info__text__chromatic, .info__text__diatonic, .info__text__tremolo {
+  display: none;
+}
+.info > p {
+  font-size: 5vw;
+}
 
+/* noteworthy */
 .noteworthy {
   height: 100vh;
   margin-top: 30em;
