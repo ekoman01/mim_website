@@ -145,10 +145,10 @@ const kinds = () => {
   let kind = document.querySelectorAll(".kind");
   for (let i = 0; i < kind.length; i++) {
     kind[i].addEventListener("mouseover", (event) => {
-      kind[i].src = "./assets/animation/" + kind[i].id + "_Hover.png";
+      kind[i].src = "assets/animation/" + kind[i].id + "_Hover.png";
     });
     kind[i].addEventListener("mouseout", (event) => {
-      kind[i].src = "./assets/animation/" + kind[i].id + "_.png";
+      kind[i].src = "assets/animation/" + kind[i].id + "_.png";
     });
     kind[i].addEventListener("click", (event) => {
       showDetails(kind[i].id);
