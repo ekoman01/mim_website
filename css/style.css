@@ -281,7 +281,12 @@ ul {
   display: none;
 }
 .info > p {
+  color: #D6CBB3;
   font-size: 5vw;
+  background-image: url('/assets/svg/deco.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1.5em;
 }
 
 /* noteworthy */

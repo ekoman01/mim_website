@@ -6,7 +6,12 @@
   justify-content: space-between;
   position: relative;
 }
-.artist__year {
+
+.artist__year  {
+  color: #467A8A;
+  font-size: 50vw;
+}
+.artist__year > h2 {
   color: #467A8A;
   font-size: 50vw;
 }
