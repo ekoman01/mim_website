@@ -5,6 +5,7 @@ html, body {
   width: 100vw;
   background-color: #D6CBB3;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -296,9 +297,10 @@ ul {
 }
 
 .noteworthy__title {
-  font-size: 11vw;
-  text-align: center;
+  font-size: 6vw;
   padding-top: 0.2em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .noteworthy__text {
@@ -310,4 +312,39 @@ ul {
 .noteworthy__spotify {
   padding-left: 1em;
   padding-right: 1em;
+}
+
+.ending {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ending__title {
+  font-size: 10vw;
+  line-height: 1.2em;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.ending > p {
+  font-size: 5vw;
+  text-align: center;
+  margin-top: -1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.ending > button {
+  background-color: #AF2A1A;
+  border-radius: 8px;
+  border-width: 0;
+  color: #D6CBB3;
+  cursor: pointer;
+  font-size: 5vw;
+  list-style: none;
+  margin-top: 1em;
+  padding: 0.8em 1em;
+  text-align: center;
 }

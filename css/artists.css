@@ -3,25 +3,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   position: relative;
 }
 
 .artist__year  {
   color: #467A8A;
   font-size: 50vw;
+  margin-top: -0.5em;
 }
 .artist__year > h2 {
   color: #467A8A;
   font-size: 50vw;
 }
 .artist__name {
-  margin-top: -0.5em;
+  margin-top: -1.7em;
   font-size: 30vw;
 }
 .artist__nickname {
   margin-top: -1em;
-  font-size: 10vw;
+  font-size: 9vw;
   position: relative;
 }
 .artist__nickname > p {
@@ -107,13 +108,18 @@
 }
 .bob__name {
   text-align: center;
-  margin-top: -1em;
+  font-size: 25vw;
+  line-height: 1em;
 }
 .bob__nickname {
   padding-top: 0.5em;
+  font-size: 7vw;
+}
+.bob__nickname__back {
+  width: 100vw;
 }
 .bob__quote {
-  margin-top: -15.8em;
+  margin-top: -12em;
   margin-bottom: 6em;
 }
 
@@ -121,14 +127,16 @@
 .stevie {
   margin-top: 20em;
 }
-.stevie__image {
-  margin-top: -8em;
-}
 .stevie__name {
   text-align: center;
+  font-size: 25vw;
+  line-height: 1em;
+}
+.stevie__image {
+  margin-top: -10em;
 }
 .stevie__quote {
-  margin-top: -16em;
+  margin-top: -8em;
   margin-bottom: 6em;
 }
 
@@ -136,26 +144,44 @@
 .west {
   margin-top: 20em;
 }
+.west__name {
+  text-align: center;
+  font-size: 15vw;
+  line-height: 1em;
+  margin-top: -2.4em;
+}
+.west__nickname {
+  margin-top: -0.8em;
+}
+.west__image {
+  margin-top: 1em;
+}
+.west__quote {
+  margin-top: -12em;
+}
+.west__quote > p {
+  margin-top: -0.2em;
+}
 
 /* john */
 .john {
   margin-top: 20em;
 }
 .john__image {
-  margin-top: 1em;
-}
-.john__image {
-  margin-top: -3em;
+  margin-top: -6em;
 }
 .john__name {
   text-align: center;
-  margin-top: -0.8em;
+  font-size: 25vw;
+  line-height: 1em;
+  margin-top: -1.6em;
 }
 .john__nickname {
   padding-top: 0.5em;
+  font-size: 8vw;
 }
 .john__quote {
-  margin-top: -16em;
+  margin-top: -12em;
   margin-bottom: 6em;
 }
 
@@ -164,17 +190,19 @@
   margin-top: 20em;
 }
 .jason__image {
-  margin-top: -7em;
+  margin-top: -6em;
 }
 .jason__name {
   text-align: center;
-  margin-top: -0.8em;
+  font-size: 30vw;
+  line-height: 1em;
+  margin-top: -1.2em;
 }
 .jason__nickname {
   padding-top: 0.5em;
+  font-size: 7vw;
 }
 .jason__quote {
   margin-top: -16em;
   margin-bottom: 6em;
 }
-

@@ -225,10 +225,10 @@ const artists_part = () => {
     artistTl.fromTo("." + artists[artist].name + "__nickname", { y: 800 }, { y: 0 }, "<1");
     artistTl.fromTo("." + artists[artist].name + "__image", { y: 800 }, { y: 0 }, "<2");
 
-    artistTl.fromTo("." + artists[artist].name + "__name", { y: 0 }, { y: -500 }, "<4");
-    artistTl.fromTo("." + artists[artist].name + "__nickname", { y: 0 }, { y: -800 }, "<");
+    artistTl.fromTo("." + artists[artist].name + "__name", { y: 0, opacity: 1 }, { y: -500, opacity: 0  }, "<4");
+    artistTl.fromTo("." + artists[artist].name + "__nickname", { y: 0, opacity: 1 }, { y: -800, opacity: 0 }, "<");
 
-    artistTl.fromTo("." + artists[artist].name + "__quote", { y: 800 }, { y: 0 }, "<6");
+    artistTl.fromTo("." + artists[artist].name + "__quote", { y: 800, opacity: 0  }, { y: 0, opacity: 1 }, "<6");
 
     artistTl.fromTo("." + artists[artist].name + "__quote", { y: 0 }, { y: -500 }, "<2");
     artistTl.fromTo("." + artists[artist].name + "__image", { opacity: 1 }, { opacity: 0, duration: 3 }, "<");
