@@ -1,4 +1,11 @@
 @media screen and (min-width: 620px) and (max-width: 1100px) {
+  .header__title > img {
+    margin-top: 4em;
+  }
+  .header__undertitle > img {
+    margin-top: 2.5em;
+  }
+
   /* intro */
   .intro {
     margin-top: 12em;
@@ -128,6 +135,59 @@
   .west__quote > p {
     margin-top: -0.2em;
   }
+
+  /* john */
+  .john__image {
+    margin-top: -35em;
+  }
+  .john__name {
+    text-align: center;
+    font-size: 15vw;
+    line-height: 1em;
+    margin-top: -2.5em;
+  }
+  .john__nickname {
+    padding-top: 2em;
+    font-size: 8vw;
+  }
+  .john__quote {
+    margin-top: -8em;
+    margin-bottom: 6em;
+  }
+
+  /* jason */
+  .jason__image {
+    margin-top: -40em;
+  }
+  .jason__name {
+    text-align: center;
+    font-size: 15vw;
+    line-height: 1em;
+    margin-top: -2.5em;
+  }
+  .jason__nickname {
+    padding-top: 2em;
+    font-size: 7vw;
+  }
+  .jason__quote {
+    margin-top: -8em;
+    margin-bottom: 6em;
+  }
+
+  /* noteworthy */
+  .noteworthy {
+    margin-top: 60em;
+  }
+  .noteworthy__text {
+    font-size: 4vw;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+  }
+
+  .ending {
+    margin-top: 20em;
+  }
 }
 
 @media screen and (min-width: 1100px) {
@@ -188,6 +248,8 @@
   .kinds {
     padding-left: 10em;
     padding-right: 10em;
+
+    overflow-x: hidden;
   }
   .kinds__kind {
     display: flex;
@@ -227,7 +289,7 @@
     flex-shrink: 1;
     width: 100vw;
     height: 100vh;
-    margin-right: 50px;
+    margin-right: 1em;
     transform-origin: none;
     transform: none;
     transition: none;
