@@ -46,6 +46,15 @@
   .artist__nickname {
     margin-top: -2.5em;
   }
+  .artist__year {
+    font-size: 40vw;
+  }
+  .artist__year > h2 {
+    font-size: 40vw;
+  }
+  .artist__name {
+    font-size: 25vw;
+  }
   .artist__image {
     margin-top: -20em;
   }
