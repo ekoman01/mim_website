@@ -43,6 +43,9 @@
   }
 
   /* artists */
+  .artist {
+    margin-top: 40em;
+  }
   .artist__nickname {
     margin-top: -2.5em;
   }
@@ -59,6 +62,7 @@
     margin-top: -20em;
   }
   .artist__quote {
+    z-index: 1;
     margin-top: -7.8em;
     font-size: 5vw;
     text-align: center;
@@ -357,6 +361,8 @@
   .artist__image {
     grid-column: 1 / 1;
     margin-top: -30vh;
+    position: fixed;
+    bottom: 0;
   }
   .artist__image > img {
     width: 50vw;
@@ -638,5 +644,25 @@
   }
   .ending > button {
     font-size: 2vw;
+  }
+}
+
+
+@media screen and (min-width: 1500px) {
+  .artist__quote > p {
+    color: #d6cbb3;
+    position: absolute;
+    font-size: 2vw;
+    padding-top: 2.5em;
+    padding-left: 2em;
+    padding-right: 32em;
+    width: 100vw;
+  }
+
+  .artist__work {
+    position: relative;
+    grid-column: 2/2;
+    align-self: start;
+    margin-top: -40em;
   }
 }
