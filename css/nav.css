@@ -104,6 +104,7 @@
   .nav > #nav-check:checked ~ .nav-links {
     height: calc(100vh);
     overflow-y: auto;
+    transition: height 4s;
   }
 }
 

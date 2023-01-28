@@ -642,7 +642,7 @@
     padding-right: 1em;
   }
   .noteworthy__spotify > iframe {
-   height: 80%;
+    height: 80%;
   }
 
   .ending {
@@ -662,8 +662,22 @@
   }
 }
 
-
 @media screen and (min-width: 1500px) {
+  .intro {
+    margin-top: 12em;
+  }
+  .parts > p {
+    font-size: 2vw;
+    bottom: 1em;
+  }
+  .parts__name {
+    margin-top: 70vh;
+    font-size: 2vw;
+  }
+  .kinds {
+    padding-left: 15em;
+    padding-right: 10em;
+  }
   .artist__quote > p {
     color: #d6cbb3;
     position: absolute;

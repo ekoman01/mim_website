@@ -57,7 +57,7 @@
   color: #D6CBB3;
   position: absolute;
   padding-top: 2em;
-  padding-left: 1em;
+  padding-left: 2em;
   width: 80vw;
 }
 .artist__harmonica {
@@ -133,11 +133,14 @@
   line-height: 1em;
 }
 .stevie__image {
-  margin-top: -10em;
+  margin-top: -9em;
 }
 .stevie__quote {
-  margin-top: -8em;
+  margin-top: -9em;
   margin-bottom: 6em;
+}
+.stevie__fact > p{
+  margin-top: 3em;
 }
 
 /* west */
@@ -183,6 +186,12 @@
 .john__quote {
   margin-top: -12em;
   margin-bottom: 6em;
+}
+.john__quote > p {
+  margin-top: 2em;
+}
+.john__fact > p {
+  margin-top: 3.5em;
 }
 
 /* jason */

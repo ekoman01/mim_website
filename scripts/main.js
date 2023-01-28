@@ -153,12 +153,33 @@ const kinds = () => {
     kind[i].addEventListener("click", (event) => {
       showDetails(kind[i].id);
     });
+    document.querySelector(".info").addEventListener("click", (event) => {
+      const test = "mobile";
+      showDetails(test);
+    });
   }
 }
 
 let pressed = false;
+let sizeLarge;
 
 const showDetails = (id) => {
+  
+  mm.add(
+    {
+      large: "(min-width: 1100px)",
+    },
+    (context) => {
+      const { conditions } = context;
+      if (conditions.large) {
+       sizeLarge == true;
+      }
+      else if (!conditions.large){
+        sizeLarge == false;
+      }
+    }
+  );
+
   const types = ["Chromatic", "Diatonic", "Tremolo"];
   for (let type in types) {
     if (id == types[type]) {
@@ -166,7 +187,10 @@ const showDetails = (id) => {
         document.querySelector(".info__text__" + types[type].toLowerCase()).style.display = "flex";
         pressed = true;
         for (let other in types) {
-          if (id != types[other]) {
+          if (id != types[other] && sizeLarge) {
+            document.querySelector("." + types[other].toLowerCase() + "__kind").style.display = "none";
+          }
+          else if (!sizeLarge) {
             document.querySelector("." + types[other].toLowerCase() + "__kind").style.display = "none";
           }
         }
@@ -179,6 +203,13 @@ const showDetails = (id) => {
             document.querySelector("." + types[other].toLowerCase() + "__kind").style.display = "flex";
           }
         }
+      }
+    }
+    else if (id == "mobile") {
+      pressed = false;
+      for (let other in types) {
+        document.querySelector("." + types[other].toLowerCase() + "__kind").style.display = "flex";
+        document.querySelector(".info__text__" + types[type].toLowerCase()).style.display = "none";
       }
     }
   }
@@ -234,9 +265,9 @@ const artists_part = () => {
     artistTl.fromTo("." + artists[artist].name + "__image", { opacity: 1 }, { opacity: 0, duration: 3 }, "<1");
     artistTl.fromTo("." + artists[artist].name + "__year", { y: 0 }, { y: -400 }, "<");
 
-    artistTl.fromTo("." + artists[artist].name +"__harmonica", { y: 100 }, { y: -500 }, "<2");
-    artistTl.fromTo("." + artists[artist].name + "__fact", { y: 100 }, { y: -500 }, "<");
-    artistTl.fromTo("." + artists[artist].name + "__work", { y: 100 }, { y: -500 }, "<");
+    artistTl.fromTo("." + artists[artist].name +"__harmonica", { y: 100, opacity: 0 }, { y: -500, opacity: 1 }, "<2");
+    artistTl.fromTo("." + artists[artist].name + "__fact", { y: 100, opacity: 0 }, { y: -500, opacity: 1 }, "<");
+    artistTl.fromTo("." + artists[artist].name + "__work", { y: 100, opacity: 0}, { y: -500, opacity: 1 }, "<");
   }
 }
 
