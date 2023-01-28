@@ -93,8 +93,8 @@ const deconstruct_part = () => {
   mm.add(
     {
       small: "(max-width: 620px)",
-      medium: "(min-width: 620px, max-width: 1000px)",
-      large: "(min-width: 1000px)",
+      medium: "(max-width: 1099px)",
+      large: "(min-width: 1100px)",
     },
     (context) => {
       const { conditions } = context;
@@ -145,10 +145,10 @@ const kinds = () => {
   let kind = document.querySelectorAll(".kind");
   for (let i = 0; i < kind.length; i++) {
     kind[i].addEventListener("mouseover", (event) => {
-      kind[i].src = "assets/animation/" + kind[i].id + "_Hover.png";
+      kind[i].src = "assets/animation/" + kind[i].id + "_Hover.webp";
     });
     kind[i].addEventListener("mouseout", (event) => {
-      kind[i].src = "assets/animation/" + kind[i].id + "_.png";
+      kind[i].src = "assets/animation/" + kind[i].id + "_.webp";
     });
     kind[i].addEventListener("click", (event) => {
       showDetails(kind[i].id);
