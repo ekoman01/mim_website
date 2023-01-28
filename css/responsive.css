@@ -391,19 +391,20 @@
     padding-left: 1em;
   }
   .artist__harmonica__back {
-    width: 30vw;
+    width: 40vw;
   }
   .artist__fact {
-    margin-top: -2em;
+    margin-top: -6em;
     position: relative;
-    grid-column: 1/2;
+    grid-column: 1/3;
+    justify-self: center;
   }
   .artist__fact > p {
     padding-left: 2em;
     padding-right: 1em;
-    padding-top: 1.3em;
+    padding-top: 1em;
     text-align: center;
-    font-size: 3vw;
+    font-size: 2vw;
     position: absolute;
     color: #d6cbb3;
   }
@@ -413,6 +414,8 @@
   .artist__work {
     position: relative;
     grid-column: 2/2;
+    align-self: start;
+    margin-top: -30em;
   }
   .artist__work > p {
     color: #d6cbb3;
@@ -591,12 +594,12 @@
   }
   .jason__quote > p {
     padding-top: 2em;
-    padding-left: 2em;
+    padding-left: 3em;
     padding-right: 20em;
     width: 100vw;
   }
   .jason__quote > picture > img {
-    width: 40vw;
+    width: 45vw;
   }
 
   /* noteworthy */
@@ -607,9 +610,6 @@
 
   .noteworthy__title {
     font-size: 5vw;
-    padding-top: 0.2em;
-    padding-left: 1em;
-    padding-right: 1em;
   }
 
   .noteworthy__text {
@@ -626,37 +626,17 @@
 
   .ending {
     margin-top: 30em;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
   }
 
   .ending__title {
     font-size: 5vw;
-    line-height: 1.2em;
-    text-align: center;
-    padding-left: 1em;
-    padding-right: 1em;
   }
   .ending > p {
     font-size: 2vw;
-    text-align: center;
-    margin-top: -1em;
     padding-left: 10em;
     padding-right: 10em;
   }
   .ending > button {
-    background-color: #af2a1a;
-    border-radius: 8px;
-    border-width: 0;
-    color: #d6cbb3;
-    cursor: pointer;
     font-size: 2vw;
-    list-style: none;
-    margin-top: 1em;
-    padding: 0.8em 1em;
-    text-align: center;
   }
 }

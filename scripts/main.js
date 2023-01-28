@@ -230,9 +230,9 @@ const artists_part = () => {
 
     artistTl.fromTo("." + artists[artist].name + "__quote", { y: 800, opacity: 0  }, { y: 0, opacity: 1 }, "<6");
 
-    artistTl.fromTo("." + artists[artist].name + "__quote", { y: 0 }, { y: -500 }, "<2");
+    artistTl.fromTo("." + artists[artist].name + "__quote", { y: 0 }, { y: -800 }, "<2");
     artistTl.fromTo("." + artists[artist].name + "__image", { opacity: 1 }, { opacity: 0, duration: 3 }, "<");
-    artistTl.fromTo("." + artists[artist].name + "__year", { y: 0 }, { y: -200 }, "<");
+    artistTl.fromTo("." + artists[artist].name + "__year", { y: 0 }, { y: -400 }, "<");
 
     artistTl.fromTo("." + artists[artist].name +"__harmonica", { y: 100 }, { y: -500 }, "<2");
     artistTl.fromTo("." + artists[artist].name + "__fact", { y: 100 }, { y: -500 }, "<");
