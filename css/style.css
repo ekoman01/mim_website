@@ -295,6 +295,11 @@ ul {
   padding-left: 1em;
   padding-right: 1em;
 }
+.noteworthy__spotify > iframe {
+  border-radius: 12px;
+  border-style: none;
+  width: 100%;
+}
 
 .ending {
   height: 100vh;
