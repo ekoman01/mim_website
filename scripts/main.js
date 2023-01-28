@@ -93,8 +93,8 @@ const deconstruct_part = () => {
   mm.add(
     {
       small: "(max-width: 620px)",
-      medium: "(max-width: 1000px)",
-      large: "(min-width: 1000px)",
+      medium: "(max-width: 1099px)",
+      large: "(min-width: 1100px)",
     },
     (context) => {
       const { conditions } = context;
