@@ -35,7 +35,6 @@ const sizes = [
 ];
 
 {
-  
   const mainImages = [
     { map: "", fileName: "Bob" },
     { map: "", fileName: "jason_ricci" },
@@ -44,6 +43,7 @@ const sizes = [
     { map: "", fileName: "stevie_wonder" },
     { map: "", fileName: "Toots" },
     { map: "", fileName: "west-large" },
+    { map: "", fileName: "west-tablet" },
     { map: "", fileName: "west" },
     { map: "animation/", fileName: "Chromatic_" },
     { map: "animation/", fileName: "Chromatic_Hover" },
@@ -58,7 +58,7 @@ const sizes = [
     { map: "parts/", fileName: "Draw" },
     { map: "parts/", fileName: "Top" },
   ];
-  
+
   const imagePaths = mainImages.map((i) => {
     return `./assets/${i.map}${i.fileName}.webp`;
   });
@@ -427,9 +427,13 @@ const sizes = [
   };
 
   const initPage = () => {
-    gsap.to('.preloader', { duration: 0.5, autoAlpha: 0, onComplete: () => {
-      document.documentElement.classList.remove('is-loading');
-    }});
+    gsap.to(".preloader", {
+      duration: 0.5,
+      autoAlpha: 0,
+      onComplete: () => {
+        document.documentElement.classList.remove("is-loading");
+      },
+    });
     intro_part();
     deconstruct_part();
     kinds();

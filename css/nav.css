@@ -54,6 +54,10 @@
   display: none;
 }
 
+.lang-mobile {
+  display: none;
+}
+
 @media (max-width: 620px) {
   .nav {
     background-position: 10%;
@@ -106,6 +110,12 @@
     overflow-y: auto;
     transition: height 4s;
   }
+  .arrow-lang {
+    display: none;
+  }
+  .lang-mobile{
+    display: unset;
+  }
 }
 
 @media screen and (min-width: 620px) and (max-width: 1100px) {
@@ -113,7 +123,7 @@
     background-position: 10%;
     width: 100vw;
   }
-  .nav > .nav-links > a:nth-child(n+3) {
+  .nav > .nav-links > a:nth-child(n+3):not(:last-child) {
     display: none;
     color: #d6cbb3;
   }
