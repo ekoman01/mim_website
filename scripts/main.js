@@ -240,14 +240,15 @@ const sizes = [
   const showDetails = (id) => {
     mm.add(
       {
+        small: "(max-width: 1099px)",
         large: "(min-width: 1100px)",
       },
-      (context) => {
+      (context) => {  
         const { conditions } = context;
         if (conditions.large) {
-          sizeLarge == true;
-        } else if (!conditions.large) {
-          sizeLarge == false;
+          sizeLarge = true;
+        } else if (conditions.small) {
+          sizeLarge = false;
         }
       }
     );
@@ -261,6 +262,7 @@ const sizes = [
           ).style.display = "flex";
           pressed = true;
           for (let other in types) {
+            console.log(sizeLarge);
             if (id != types[other] && sizeLarge) {
               document.querySelector(
                 "." + types[other].toLowerCase() + "__kind"
