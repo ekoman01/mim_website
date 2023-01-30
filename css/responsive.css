@@ -654,7 +654,7 @@
   }
 
   .ending {
-    margin-top: 30em;
+    margin-top: 10em;
   }
 
   .ending__title {
@@ -667,6 +667,9 @@
   }
   .ending > button {
     font-size: 2vw;
+  }
+  .ending__socials > img {
+    width: 5vw;
   }
 }
 
